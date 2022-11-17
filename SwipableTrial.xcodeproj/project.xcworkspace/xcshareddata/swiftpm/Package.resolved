@@ -1,0 +1,14 @@
+{
+  "pins" : [
+    {
+      "identity" : "snappable",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/hugehoge/Snappable.git",
+      "state" : {
+        "revision" : "806de8123c87fdd818f1b8998a56417a1a510007",
+        "version" : "0.3.0"
+      }
+    }
+  ],
+  "version" : 2
+}

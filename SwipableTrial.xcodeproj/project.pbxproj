@@ -14,6 +14,8 @@
 		831AC7382926830B00CAA723 /* SwipableTrialTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 831AC7372926830B00CAA723 /* SwipableTrialTests.swift */; };
 		831AC7422926830B00CAA723 /* SwipableTrialUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 831AC7412926830B00CAA723 /* SwipableTrialUITests.swift */; };
 		831AC7442926830B00CAA723 /* SwipableTrialUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 831AC7432926830B00CAA723 /* SwipableTrialUITestsLaunchTests.swift */; };
+		831AC751292687B200CAA723 /* carousel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 831AC750292687B200CAA723 /* carousel.swift */; };
+		831AC75429268DB200CAA723 /* Snappable in Frameworks */ = {isa = PBXBuildFile; productRef = 831AC75329268DB200CAA723 /* Snappable */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +46,7 @@
 		831AC73D2926830B00CAA723 /* SwipableTrialUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwipableTrialUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		831AC7412926830B00CAA723 /* SwipableTrialUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipableTrialUITests.swift; sourceTree = "<group>"; };
 		831AC7432926830B00CAA723 /* SwipableTrialUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipableTrialUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		831AC750292687B200CAA723 /* carousel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = carousel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +54,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				831AC75429268DB200CAA723 /* Snappable in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -98,6 +102,7 @@
 				831AC7282926830A00CAA723 /* ContentView.swift */,
 				831AC72A2926830B00CAA723 /* Assets.xcassets */,
 				831AC72C2926830B00CAA723 /* Preview Content */,
+				831AC750292687B200CAA723 /* carousel.swift */,
 			);
 			path = SwipableTrial;
 			sourceTree = "<group>";
@@ -143,6 +148,9 @@
 			dependencies = (
 			);
 			name = SwipableTrial;
+			packageProductDependencies = (
+				831AC75329268DB200CAA723 /* Snappable */,
+			);
 			productName = SwipableTrial;
 			productReference = 831AC7232926830A00CAA723 /* SwipableTrial.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +223,9 @@
 				Base,
 			);
 			mainGroup = 831AC71A2926830A00CAA723;
+			packageReferences = (
+				831AC75229268DB200CAA723 /* XCRemoteSwiftPackageReference "Snappable" */,
+			);
 			productRefGroup = 831AC7242926830A00CAA723 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -259,6 +270,7 @@
 			files = (
 				831AC7292926830A00CAA723 /* ContentView.swift in Sources */,
 				831AC7272926830A00CAA723 /* SwipableTrialApp.swift in Sources */,
+				831AC751292687B200CAA723 /* carousel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -583,6 +595,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		831AC75229268DB200CAA723 /* XCRemoteSwiftPackageReference "Snappable" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/hugehoge/Snappable.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.3.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		831AC75329268DB200CAA723 /* Snappable */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 831AC75229268DB200CAA723 /* XCRemoteSwiftPackageReference "Snappable" */;
+			productName = Snappable;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 831AC71B2926830A00CAA723 /* Project object */;
 }
